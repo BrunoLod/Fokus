@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@font-face {
+    font-family: SDGlitch;
+    src: url(fontes/Sdglitchrobotdemo-GOPdO.ttf);
+}
+
+@font-face {
+    font-family: Valorax;
+    src: url(fontes/Valorax-lg25V.otf);
+}
+
+@font-face {
+    font-family: Techno;
+    src: url(fontes/TechnoCharmDemoVersionRegular-ALaZm.otf);
+}
+
+.root {
+    --color-primary: #05F9F1;
+    --color-secondary: #E342D8;
+    --color-border-box: #64A1C8;
+    --color-box: rgba(100, 161, 200, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    background: radial-gradient(circle at top, #64A1C8 -500%, #0C0A0F 42%, #0C0A0F 100%);
+    min-height: 100vh;
+
+}
+
+/* header */
+
+.app-header {
+    display: flex;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-title {
+    margin: 0 auto;
+}
+
+.title {
+    font-family: SDGlitch;
+    font-size: 64px;
+    color: #E342D8;
+
+}
+
+.menu-app {
+    display: flex;
+    justify-content: flex-end;
+
+    height: 3.4375rem;
+    width: 3.4375rem;
+}
+
+/* fim do header */
+
+/* banner */
+
+.app__section-banner-container {
+    width: 99rem;
+    margin: -1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.app__title-banner {
+    display: flex;
+    justify-content: center;
+
+    font-family: SDGlitch;
+    font-size: 3.5rem;
+    color: #05F9F1;
+
+    line-height: 110%;
+    text-shadow: 2px 2px 12px rgba(5, 249, 241, 0.5);
+
+    max-width: 46rem;
+    padding: 4rem;
+}
+
+.app__image-figure {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+
+    height: 26, 875rem;
+    width: 26, 875rem;
+}
+
+/* fim do banner */
+
+/* caracteres numéricos */
+
+.glitch-text-left {
+    display: flex;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 145%;
+    color: #05F9F1;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    max-width: 12.5rem;
+    height: 100%;
+    animation: glitch 1s infinite linear;
+}
+
+/* fim dos caracteres numéricos */
+
+/* caracteres nipônicos */
+
+.glitch-text-right {
+    display: flex;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    line-height: 145%;
+    color: #05F9F1;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    max-width: 12.5rem;
+    height: 100%;
+    animation: glitch 1s infinite linear;
+}
+
+/* fim dos caracteres nipônicos*/
+
+/* Animação do glitch */
+
+
+/* card container (timer) */
+
+.app__section-card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.app__card {
+    border-radius: 2.2rem;
+    background-color: rgba(100, 161, 200, 0.05);
+    border: 2px solid #64A1C8;
+    padding: 1.4rem;
+    margin: 1rem 0;
+    width: 59rem;
+    max-width: 90%;
+}
+
+.app__card-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.app__card-button {
+    font-family: Valorax;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 145%;
+    background: none;
+    padding: 0.8rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.app__card-button:hover {
+    color: #E342D8;
+}
+
+.app__card-button.active {
+    border-radius: 0.8rem;
+    color: #E342D8;
+    border: 2px solid #E342D8;
+}
+
+.app__card-timer {
+    color: #fff;
+    text-align: center;
+    font-family: Valorax;
+    font-size: 10rem;
+    line-height: normal;
+    margin: 3.2rem;
+    text-align: center;
+}
+
+.app__card-list-label {
+    color: #fff;
+    font-family: Valorax;
+    font-size: 1.8rem;
+}
+
+.app__card-primary-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__card-primary-butto-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.app__card-primary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Valorax;
+    padding: 1rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 12px;
+    background: #E342D8;
+    margin-top: 3.2rem;
+    font-size: 1.8rem;
+    gap: 1rem;
+}
+
+/* fim do card container (timer) */
+
+/* footer*/
+
+.app__footer {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__footer-text {
+    color: #fff;
+    text-align: center;
+    font-family: Techno;
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.app__footer-text-destaque {
+    color: #E342D8;
+}
+
+/* fim do footer*/
+
+/* toggle */
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    border-radius: 1.6rem;
+    border: 2px solid #E342D8;
+    width: 5.8rem;
+    height: 3.2rem;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    border-radius: 50%;
+    background: #E342D8;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: #E342D8
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: none
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 3rem;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+        transform: translate(2px, -2px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-2px, 2px);
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* fim - toggle */
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    .app__section-banner-container {
+        width: 32rem;
+    }
+
+    .app__title {
+        font-size: 2.6rem;
+    }
+
+    .app__card-timer {
+        font-size: 6rem;
+    }
+}

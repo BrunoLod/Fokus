@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon/fokus_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
+
+
+    <script src="index.js" defer></script>
+
+    <title>Fokus</title>
+</head>
+
+<body>
+    <main class="app">
+
+        <header class="app-header">
+            <div class="app-title">
+                <h1 class="title">Fokus</h1>
+            </div>
+            <div class="menu-app">
+                <a href="#"><img src="./icon/menu_icon.png" alt=""></a>
+            </div>
+        </header>
+
+        <section class="app__section-banner-container">
+            <h1 class="app__title-banner"> Otimize a sua produtividade <br> e se jogue no que importa</h1>
+            <figure class="app__image-figure">
+                <img class="app__image" src="./image/foco.png" alt="">
+            </figure>
+        </section>
+
+        <section class="app__section-card-container">
+
+            <div class="glitch-text-left"></div>
+            <div class="glitch-text-right"></div>
+
+            <div class="app__card">
+
+                <ul class="app__card-list">
+                    <li class="app__card-list-item">
+                        <button class="app__card-button app__card-button--foco active">Foco</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button class="app__card-button app__card-button--curto">Descanso curto</button>
+                    </li>
+                    <li class="app__card-list-item">
+                        <button class="app__card-button app__card-button--longo">Descanso longo</button>
+                    </li>
+                </ul>
+
+                <div id="timer" class="app__card-timer"></div>
+                <ul class="app__card-list">
+
+                    <li class="app__card-list-item">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li class="app__card-list-item">
+                        <label class="app__card-list-label" for="alternar-musica">
+                            Musica
+                        </label>
+                    </li>
+
+                </ul>
+
+                <div class="app__card-primary-button-wrapper">
+                    <button id="start-pause" class="app__card-primary-button">
+                        <img class="app__card-primary-butto-icon" src="./icon/play_arrow.png" alt="">
+                        <span>Start</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="app__footer">
+            <p class="app__footer-text">
+                Imagens obtidas no Pinterest. <span class="app__footer-text-destaque">Desenvolvido por Bruno
+                    Loducca</span>
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
